@@ -72,3 +72,13 @@ body {
   margin: 0 10px;
   accent-color: #a46cff;
 }
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: radial-gradient(circle at top left, #1b0034, #0a001a);
+}

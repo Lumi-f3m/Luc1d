@@ -19,15 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 1,
       title: "Crazy Story",
       artist: "King Von",
-      filename: "crazystory",
+      filename: "assets/songs/crazystory.mp3",
       cover: "assets/images/crazystory.png"
     },
     {
       id: 2,
       title: "Like Him",
       artist: "King Von",
-      filename: "likehim",
+      filename: "assets/songs/likehim.mp3",
       cover: "assets/images/likehim.png"
+    },
+    {
+      id: 3,
+      title: "Marther Luther King",
+      artist: "Yuno Miles",
+      filename: "assets/songs/martherlutherking.mp3",
+      cover: "asstes/images/martherlutherking.pmg"
     }
   ];
 

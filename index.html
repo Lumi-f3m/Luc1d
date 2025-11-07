@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luc1d Music Player</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
   <div class="player-container">
+    <!-- Album Art -->
     <div class="album-art">
-      <img id="cover" src="assets/images/crazystory.png" alt="Album cover">
+      <img id="cover" src="assets/images/crazystory.png" alt="Album cover" />
     </div>
 
+    <!-- Song Info -->
     <div class="song-info">
       <h2 id="song-title">Crazy Story</h2>
       <p id="artist-name">King Von</p>
     </div>
 
+    <!-- Audio -->
     <audio id="audio-player" src="assets/songs/crazystory.mp3"></audio>
 
+    <!-- Controls -->
     <div class="controls">
+      <button id="prev-btn"><i data-lucide="skip-back"></i></button>
       <button id="play-btn"><i data-lucide="play"></i></button>
       <button id="pause-btn" style="display:none;"><i data-lucide="pause"></i></button>
+      <button id="next-btn"><i data-lucide="skip-forward"></i></button>
     </div>
 
+    <!-- Progress -->
     <div class="progress-container">
       <span id="current-time">0:00</span>
-      <input type="range" id="progress-bar" value="0" max="100">
+      <input type="range" id="progress-bar" value="0" max="100" />
       <span id="duration">0:00</span>
     </div>
   </div>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
